@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset= "UTF-8">
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title> Artificial Intelligence Photo Gallery </title>
+		<link rel="stylesheet" href="css/main.css">
+     </head>
+
+<!-- CSS CODING -->
+
+<style>
+   
+body {
+  background-image: url('bg11.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  font-family:playfair display;
+}
+
+footer {
+  max-width: 1000px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+  font-family:open sans;
+}
+
+.topic {
+  text-align: center;
+  margin-bottom: 1px;
+  
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+</style>
+
+<!-- HTML CODING -->
+
+<body> 
+		<header>
+			<h1 style="color:white;" class="logo">AI</h1>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="Tribute.html">Tribute Page</a></li>
+                    <li><a href="index.html">Parallax</a></li>
+                    <li><a href="Form.html">Form</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#">Contact</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="#">Tribute Page</a>
+                <a href="#">Photo Gallery</a>
+                <a href="#">Form</a>
+            </div>
+        </div>		
+<!-- HTML CODING -->
+
+<body> 
+     	<div class="container">
+		<h1 class="topic"> Artificial Intelligence </h1>
+		<div class="images">
+                                <img id="img" src="https://i.pinimg.com/564x/21/07/99/2107991f8e04c78eb1af881bd4157516.jpg"        alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+                                <img id="img" src="https://i.pinimg.com/236x/a0/98/f3/a098f32dbe332492e4b69dda80e2954d.jpg"              alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+                                <img id="img" src="https://i.pinimg.com/564x/2e/14/f0/2e14f004782aabf238b73439e1a2e1c8.jpg"       alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+                                <img id="img" src="https://i.pinimg.com/564x/eb/e1/d7/ebe1d7271da5f9a6ecaebb76b63b01fa.jpg"     alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+                                <img id="img" src="https://i.pinimg.com/564x/a8/96/e7/a896e73429c7028d4dd5d0a5c53782ee.jpg"         alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+                                <img id="img" src="https://i.pinimg.com/564x/93/e3/be/93e3be136fa6f254a06af1a73c950f81.jpg" alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+                                <img id="img" src="https://i.pinimg.com/236x/27/04/15/270415a3b815d93b533cd12291149089.jpg"        alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+                                <img id="img" src="https://i.pinimg.com/564x/e6/6e/66/e66e66a33eee270aee3f6092de07accf.jpg"   alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+                                <img id="img" src="https://i.pinimg.com/564x/f6/43/6d/f6436deb07119de55f5c901a1c8da915.jpg"        alt="Visual Representation of Artificial Intelligence" style="width:300%;max-width:100px" onclick="myImageFunction(this)">
+				
+                                
+		</div>
+                <div class="image-container">
+				<img id="img-Box" src="https://i.pinimg.com/564x/f6/43/6d/f6436deb07119de55f5c901a1c8da915.jpg" alt="click here">
+			</div> 
+	</div>
+         <footer> <b>Created by:</b> Destura, Sage S. <br> <b>From:</b> Group 5 <br> <b>Coding Reference:</b> Jquery, W3school, and Github<br> Images are from <b>Pinterest</b></footer>
+<!-- JAVA CODING -->
+
+<script>
+      function myImageFunction(productSmallImg) {
+				var productFullImg = document.getElementById("img-Box");
+				productFullImg.src = productSmallImg.src;
+}
+</script>
+</body>
+
+</html>
